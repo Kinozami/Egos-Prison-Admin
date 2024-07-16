@@ -16,11 +16,11 @@
                                                      roblox = average_cook
                                                      
                                         
-credits (not adding tags idk if they whant me 2)
+credits (not adding tags idk if they want me to)
 -------------------------------------------------------------------------
 H17S3/tiger admin man/very gay man
 -------------------------------------------------------------------------
-cjwbos did 0% of the codeing but he told me what to add so he gets credit
+cjwbos did 0% of the coding but he told me what to add so he gets credit
 --------------------------------------------------------------------------
 credit to jah helping with learning lua
 --------------------------------------------------------------------------
@@ -43,12 +43,12 @@ local Library = DarkraiX:Window("starline","prison life","",Enum.KeyCode.LeftCon
 
  Tab1 = Library:Tab("cmds")
 
- Tab1:Seperator("all the cmds for starline")
+ Tab1:Seperator("All The Cmds For Starline")
  
  Tab1:Label("?kill (player) = kills the player",function()
 end)
 
-Tab1:Label("?killall = kill evryone",function()
+Tab1:Label("?killall = kill everyone",function()
 end)
 
  Tab1:Label("?kcops = kills the cops",function()
@@ -59,19 +59,19 @@ end)
      
 end)
 
- Tab1:Label("?kcrim = kills are crims",function()
+ Tab1:Label("?kcrim = kills all crims",function()
      
 end)
 
- Tab1:Label("?bring (player) = brings the player to you",function()
+ Tab1:Label("?bring (player) = brings the asked player to you",function()
      
 end)
 
- Tab1:Label("?begone (player) = makes them gone",function()
+ Tab1:Label("?void (player) = void the player",function()
      
 end)
 
-Tab1:Label("?infjump = can jut fly with jumps",function()
+Tab1:Label("?infjump = infinitely jump",function()
      
 end)
 
@@ -107,11 +107,11 @@ end)
      
 end)
 
- Tab1:Label("?spunch =  one hits evryone",function()
+ Tab1:Label("?spunch =  one hits everyone",function()
      
 end)
 
- Tab1:Label("whitelist (player) =  cant kill that player",function()
+ Tab1:Label("whitelist (player) =  makes them immune from any commands",function()
      
 end)
 
@@ -141,15 +141,15 @@ end)
      
 end)
 
- Tab1:Label("?ak = gives you a ak47",function()
+ Tab1:Label("?ak = gives you an ak47",function()
      
 end)
 
- Tab1:Label("?m4 = gives you a m4 (gamepass)",function()
+ Tab1:Label("?m4 = gives you an m4 (gamepass)",function()
      
 end)
 
- Tab1:Label("?m9 = gives you a m9",function()
+ Tab1:Label("?m9 = gives you an m9",function()
      
 end)
 
@@ -157,16 +157,16 @@ end)
      
 end)
 
- Tab1:Label("?lgun = gives you a lag gun (you need to not have a shotgun)",function()
+ Tab1:Label("?lgun = gives you a lag gun (dont have shotgun equipped)",function()
      end)
      
-  Tab1:Label("?ad = dose an ad for starline",function()
+  Tab1:Label("?ad = does an ad for starline",function()
       end)
       
         Tab1:Label("?cop = turns you into a cop",function()
 end)
 
-        Tab1:Label("?inmate = turns you into a inmate",function()
+        Tab1:Label("?inmate = turns you into an inmate",function()
 end)
 
         Tab1:Label("?crim = turns you into a crim",function()
@@ -177,7 +177,7 @@ end)
      
  
 Tab1:Line()
-Tab1:Label("all tp shit now",function()
+Tab1:Label("all tp cmds",function()
      
 end)
 
@@ -225,11 +225,11 @@ Tab2:Label("if you like the script join our discord for updates",function()
      
 end)
 
- Tab2:Label("ps:dont be a skid i dont what the script to have a bad name",function()
+ Tab2:Label("ps:dont be a skid i dont want the script to have a bad name",function()
      
 end)
 
-Tab2:Label("credit to my gf for idia and calling me",function()
+Tab2:Label("credit to my gf for chipping in",function()
      
 end)
 
