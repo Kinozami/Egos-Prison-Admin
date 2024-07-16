@@ -16,7 +16,7 @@
                                                      roblox = average_cook
                                                      
                                         
-credits (not adding tags idk if they want me to)
+credits (not adding tags idk if they whant me 2)
 -------------------------------------------------------------------------
 H17S3/tiger admin man/very gay man
 -------------------------------------------------------------------------
@@ -48,14 +48,14 @@ local Library = DarkraiX:Window("starline","prison life","",Enum.KeyCode.LeftCon
  Tab1:Label("?kill (player) = kills the player",function()
 end)
 
-Tab1:Label("?killall = kill everyone",function()
+Tab1:Label("?killall = kills everyone",function()
 end)
 
- Tab1:Label("?kcops = kills the cops",function()
+ Tab1:Label("?kcops = kills all cops",function()
      
 end)
 
- Tab1:Label("?kinmate = kills inmates",function()
+ Tab1:Label("?kinmate = kills all inmates",function()
      
 end)
 
@@ -63,31 +63,31 @@ end)
      
 end)
 
- Tab1:Label("?bring (player) = brings the asked player to you",function()
+ Tab1:Label("?bring (player) = brings the player to you",function()
      
 end)
 
- Tab1:Label("?void (player) = void the player",function()
+ Tab1:Label("?begone (player) = voids the player",function()
      
 end)
 
-Tab1:Label("?infjump = infinitely jump",function()
+Tab1:Label("?infjump = inf jump",function()
      
 end)
 
- Tab1:Label("?mcrim (player) = makes the player a crim",function()
+ Tab1:Label("?mcrim (player) = makes the targeted player a crim",function()
      
 end)
 
- Tab1:Label("?trap (player) = traps the player",function()
+ Tab1:Label("?trap (player) = traps the targeted player",function()
      
 end)
 
- Tab1:Label("?to (player) = tps you to that player",function()
+ Tab1:Label("?to (player) = tps you to the targeted player",function()
      
 end)
 
- Tab1:Label("?arrest (player) = arrest that player",function()
+ Tab1:Label("?arrest (player) = arrest the targeted player",function()
      
 end)
 
@@ -99,7 +99,7 @@ end)
      
 end)
 
- Tab1:Label("?lk (player) = loopkills the player",function()
+ Tab1:Label("?lk (player) = loopkills the targeted player",function()
      
 end)
 
@@ -111,7 +111,7 @@ end)
      
 end)
 
- Tab1:Label("whitelist (player) =  makes them immune from any commands",function()
+ Tab1:Label("whitelist (player) =  make the targeted player immune to cmds",function()
      
 end)
 
@@ -130,11 +130,11 @@ end)
      
 end)
 
- Tab1:Label("?sword =  get a sword",function()
+ Tab1:Label("?sword =  gives you a sword",function()
      
 end)
 
- Tab1:Label("?guns = get all guns",function()
+ Tab1:Label("?guns = gives you all guns",function()
      
 end)
  Tab1:Label("?gmod  = mods all your guns",function()
@@ -157,7 +157,7 @@ end)
      
 end)
 
- Tab1:Label("?lgun = gives you a lag gun (dont have shotgun equipped)",function()
+ Tab1:Label("?lgun = gives you a lag gun (do not have shotgun equipped)",function()
      end)
      
   Tab1:Label("?ad = does an ad for starline",function()
@@ -169,7 +169,7 @@ end)
         Tab1:Label("?inmate = turns you into an inmate",function()
 end)
 
-        Tab1:Label("?crim = turns you into a crim",function()
+        Tab1:Label("?crim = turns you into an crim",function()
 end)
 
  
@@ -177,7 +177,7 @@ end)
      
  
 Tab1:Line()
-Tab1:Label("all tp cmds",function()
+Tab1:Label("Starline's Teleports",function()
      
 end)
 
