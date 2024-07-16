@@ -404,7 +404,7 @@ task.spawn(function()
 	message.TextTransparency = 1
 	message.TextScaled = true
 	message.Font = Enum.Font.SourceSansBold
-	message.Text = "by callmexdrop#2505!"
+	message.Text = "by egodestroyerontop!"
 	message.Parent = popup
 
 	popup.Parent = game.Players.LocalPlayer.PlayerGui
@@ -1413,7 +1413,7 @@ CreateCMD({
 		CallBack = function(Args)
 		   wait(0.4) 
 		    local args = {
-    [1] = "starline admin is #1 find it on github",
+    [1] = "starline admin is #1",
     [2] = "All"
 }
 
