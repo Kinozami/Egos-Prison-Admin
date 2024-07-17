@@ -13,14 +13,14 @@
     
                                                      by 
                                                      discord = egodestroyerontop
-                                                     roblox = average_cook
+                                                     roblox = average_cook or bxnjhhhh
                                                      
                                         
 credits (not adding tags idk if they whant me 2)
 -------------------------------------------------------------------------
 H17S3/tiger admin man/very gay man
 -------------------------------------------------------------------------
-cjwbos did 0% of the coding but he told me what to add so he gets credit
+cjwbos did 0% of the codeing but he told me what to add so he gets credit
 --------------------------------------------------------------------------
 credit to jah helping with learning lua
 --------------------------------------------------------------------------
@@ -39,9 +39,9 @@ local discord = "https://discord.gg/NBjt9W5zeU"
   
 
  local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/mrnotfunny/starline-gui/main/maingui", true))()
-local Library = DarkraiX:Window("starline","prison life","",Enum.KeyCode.LeftControl);
+local Library = DarkraiX:Window("Starline","Prison Life","",Enum.KeyCode.LeftControl);
 
- Tab1 = Library:Tab("cmds")
+ Tab1 = Library:Tab("Commands")
 
  Tab1:Seperator("All The Cmds For Starline")
  
@@ -51,7 +51,7 @@ end)
 Tab1:Label("?killall = kills everyone",function()
 end)
 
- Tab1:Label("?kcops = kills all cops",function()
+ Tab1:Label("?kcops = kills the cops",function()
      
 end)
 
@@ -63,14 +63,10 @@ end)
      
 end)
 
- Tab1:Label("?bring (player) = brings the player to you",function()
+ Tab1:Label("?bring (player) = brings the targeted player to you",function()
      
 end)
-
- Tab1:Label("?begone (player) = voids the player",function()
-     
-end)
-
+    
 Tab1:Label("?infjump = inf jump",function()
      
 end)
@@ -79,11 +75,7 @@ end)
      
 end)
 
- Tab1:Label("?trap (player) = traps the targeted player",function()
-     
-end)
-
- Tab1:Label("?to (player) = tps you to the targeted player",function()
+ Tab1:Label("?to (player) = tps you to the player you want to go to",function()
      
 end)
 
@@ -91,11 +83,11 @@ end)
      
 end)
 
- Tab1:Label("?arrestall = arrest all",function()
+ Tab1:Label("?arrestall = arrests all",function()
      
 end)
 
- Tab1:Label("?carrest = arrest cops",function()
+ Tab1:Label("?carrest = arrests cops by making them crim",function()
      
 end)
 
@@ -107,11 +99,11 @@ end)
      
 end)
 
- Tab1:Label("?spunch =  one hits everyone",function()
+ Tab1:Label("?spunch =  one hits everyone you punch",function()
      
 end)
 
- Tab1:Label("whitelist (player) =  make the targeted player immune to cmds",function()
+ Tab1:Label("?whitelist (player) =  targeted player immune to cmds",function()
      
 end)
 
@@ -119,7 +111,7 @@ end)
      
 end)
 
- Tab1:Label("?ndoor = removes all doors",function()
+ Tab1:Label("?ndoor = removes all doors (shit)",function()
      
 end)
 
@@ -157,7 +149,7 @@ end)
      
 end)
 
- Tab1:Label("?lgun = gives you a lag gun (do not have shotgun equipped)",function()
+ Tab1:Label("?lgun = gives you a lag gun (Make sure you dont have shotgun equipped)",function()
      end)
      
   Tab1:Label("?ad = does an ad for starline",function()
@@ -169,7 +161,7 @@ end)
         Tab1:Label("?inmate = turns you into an inmate",function()
 end)
 
-        Tab1:Label("?crim = turns you into an crim",function()
+        Tab1:Label("?crim = turns you into a crim",function()
 end)
 
  
@@ -215,7 +207,7 @@ end)
 
 
  
-Tab2 = Library:Tab("credit")
+Tab2 = Library:Tab("Credit")
  Tab2:Label("script made by egodestroyerontop and helped by kinozami ",function()
      
 end)
@@ -1413,7 +1405,7 @@ CreateCMD({
 		CallBack = function(Args)
 		   wait(0.4) 
 		    local args = {
-    [1] = "starline admin is #1",
+    [1] = "Starline Admin Is #1 Join For Starline NBjt9W5zeU",
     [2] = "All"
 }
 
