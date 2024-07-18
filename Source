@@ -149,7 +149,7 @@ end)
      
 end)
 
- Tab1:Label("?lgun = gives you a lag gun (Make sure you dont have shotgun equipped)",function()
+ Tab1:Label("?lgun = gives you a lag gun (Make sure you dont have shotgun)",function()
      end)
      
   Tab1:Label("?ad = does an ad for starline",function()
@@ -208,20 +208,20 @@ end)
 
  
 Tab2 = Library:Tab("Credit")
- Tab2:Label("script made by egodestroyerontop and helped by kinozami ",function()
+ Tab2:Label("Script Made By egodestroyerontop And Helped By kinozami ",function()
      
 end)
  
 
-Tab2:Label("if you like the script join our discord for updates",function()
+Tab2:Label("If You Like The Script Join Our Discord For Updates",function()
      
 end)
 
- Tab2:Label("ps:dont be a skid i dont want the script to have a bad name",function()
+ Tab2:Label("Also Don't Be A Dumbass With My Script",function()
      
 end)
 
-Tab2:Label("credit to my gf for chipping in",function()
+Tab2:Label("EGODESTROYER ON TOP BABBBYYY",function()
      
 end)
 
@@ -1405,8 +1405,9 @@ CreateCMD({
 		CallBack = function(Args)
 		   wait(0.4) 
 		    local args = {
-    [1] = "Starline Admin Is #1 Join For Starline NBjt9W5zeU",
+    [1] = "Starline Admin Made By egodestroyerontop Is #1 Join For Starline NBjt9W5zeU",
     [2] = "All"
+
 }
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
