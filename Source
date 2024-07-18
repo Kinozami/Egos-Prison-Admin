@@ -1,1487 +1,425 @@
-  
---[[
-  ██████ ▄▄▄█████▓ ▄▄▄       ██▓     ██▓ ███▄    █ ▓█████     ▄▄▄      ▓█████▄  ███▄ ▄███▓ ██▓ ███▄    █ 
-▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██▒    ▓██▒ ██ ▀█   █ ▓█   ▀    ▒████▄    ▒██▀ ██▌▓██▒▀█▀ ██▒▓██▒ ██ ▀█   █ 
-░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒██░    ▒██▒▓██  ▀█ ██▒▒███      ▒██  ▀█▄  ░██   █▌▓██    ▓██░▒██▒▓██  ▀█ ██▒
-  ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░    ░██░▓██▒  ▐▌██▒▒▓█  ▄    ░██▄▄▄▄██ ░▓█▄   ▌▒██    ▒██ ░██░▓██▒  ▐▌██▒
-▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒░██████▒░██░▒██░   ▓██░░▒████▒    ▓█   ▓██ ░▒████▓ ▒██▒   ░██▒░██░▒██░   ▓██░
-▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░░ ▒░▓  ░░▓  ░ ▒░   ▒ ▒ ░░ ▒░ ░    ▒▒   ▓▒█░ ▒▒▓  ▒ ░ ▒░   ░  ░░▓  ░ ▒░   ▒ ▒ 
-░ ░▒  ░ ░    ░      ▒   ▒▒ ░░ ░ ▒  ░ ▒ ░░ ░░   ░ ▒░ ░ ░  ░     ▒   ▒▒ ░ ░ ▒  ▒ ░  ░      ░ ▒ ░░ ░░   ░ ▒░
-░  ░  ░    ░        ░   ▒     ░ ░    ▒ ░   ░   ░ ░    ░        ░   ▒    ░ ░  ░ ░      ░    ▒ ░   ░   ░ ░ 
-      ░                 ░  ░    ░  ░ ░           ░    ░  ░         ░  ░   ░           ░    ░           ░ 
-                                                                        ░                                
-    
-                                                     by 
-                                                     discord = egodestroyerontop
-                                                     roblox = average_cook or bxnjhhhh
-                                                     
-                                        
-credits (not adding tags idk if they whant me 2)
--------------------------------------------------------------------------
-H17S3/tiger admin man/very gay man
--------------------------------------------------------------------------
-cjwbos did 0% of the codeing but he told me what to add so he gets credit
---------------------------------------------------------------------------
-credit to jah helping with learning lua
---------------------------------------------------------------------------
---]]
-
-local excludedPlayerIds = {3419710333, 859193561}
-
-
-local Player = game:GetService("Players").LocalPlayer
-
-
-local discord = "https://discord.gg/NBjt9W5zeU"
-
- --start of gui
- setclipboard(discord)
-  
-
- local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/mrnotfunny/starline-gui/main/maingui", true))()
-local Library = DarkraiX:Window("Starline","Prison Life","",Enum.KeyCode.LeftControl);
-
- Tab1 = Library:Tab("Commands")
-
- Tab1:Seperator("All The Cmds For Starline")
- 
- Tab1:Label("?kill (player) = kills the player",function()
-end)
-
-Tab1:Label("?killall = kills everyone",function()
-end)
-
- Tab1:Label("?kcops = kills the cops",function()
-     
-end)
-
- Tab1:Label("?kinmate = kills all inmates",function()
-     
-end)
-
- Tab1:Label("?kcrim = kills all crims",function()
-     
-end)
-
- Tab1:Label("?bring (player) = brings the targeted player to you",function()
-     
-end)
-    
-Tab1:Label("?infjump = inf jump",function()
-     
-end)
-
- Tab1:Label("?mcrim (player) = makes the targeted player a crim",function()
-     
-end)
-
- Tab1:Label("?to (player) = tps you to the player you want to go to",function()
-     
-end)
-
- Tab1:Label("?arrest (player) = arrest the targeted player",function()
-     
-end)
-
- Tab1:Label("?arrestall = arrests all",function()
-     
-end)
-
- Tab1:Label("?carrest = arrests cops by making them crim",function()
-     
-end)
-
- Tab1:Label("?lk (player) = loopkills the targeted player",function()
-     
-end)
-
- Tab1:Label("?stoplk = stops the lk",function()
-     
-end)
-
- Tab1:Label("?spunch =  one hits everyone you punch",function()
-     
-end)
-
- Tab1:Label("?whitelist (player) =  targeted player immune to cmds",function()
-     
-end)
-
- Tab1:Label("?unwhitelist = removes the whitelist",function()
-     
-end)
-
- Tab1:Label("?ndoor = removes all doors (shit)",function()
-     
-end)
-
-Tab1:Label("?rj = rejoin",function()
-end)
-
- Tab1:Label("?spin/unspin = makes you spin/unspin",function()
-     
-end)
-
- Tab1:Label("?sword =  gives you a sword",function()
-     
-end)
-
- Tab1:Label("?guns = gives you all guns",function()
-     
-end)
- Tab1:Label("?gmod  = mods all your guns",function()
-     
-end)
-
- Tab1:Label("?ak = gives you an ak47",function()
-     
-end)
-
- Tab1:Label("?m4 = gives you an m4 (gamepass)",function()
-     
-end)
-
- Tab1:Label("?m9 = gives you an m9",function()
-     
-end)
-
- Tab1:Label("?shotgun = gives you a shotgun",function()
-     
-end)
-
- Tab1:Label("?lgun = gives you a lag gun (Make sure you dont have shotgun)",function()
-     end)
-     
-  Tab1:Label("?ad = does an ad for starline",function()
-      end)
-      
-        Tab1:Label("?cop = turns you into a cop",function()
-end)
-
-        Tab1:Label("?inmate = turns you into an inmate",function()
-end)
-
-        Tab1:Label("?crim = turns you into a crim",function()
-end)
-
- 
-
-     
- 
-Tab1:Line()
-Tab1:Label("Starline's Teleports",function()
-     
-end)
-
-  Tab1:Label("?nex",function()
-     
-end)
-
-  Tab1:Label("?wall",function()
-     
-end)
-
-  Tab1:Label("?base",function()
-     
-end)
-
-  Tab1:Label("?armory",function()
-     
-end)
-
-  Tab1:Label("?secret",function()
-     
-end)
-
-  Tab1:Label("?mt",function()
-     
-end)
-
-  Tab1:Label("?roof",function()
-     
-end)
-
-  Tab1:Label("?cafe",function()
-     
-end)
-
-
- 
-Tab2 = Library:Tab("Credit")
- Tab2:Label("Script Made By egodestroyerontop And Helped By kinozami ",function()
-     
-end)
- 
-
-Tab2:Label("If You Like The Script Join Our Discord For Updates",function()
-     
-end)
-
- Tab2:Label("Also Don't Be A Dumbass With My Script",function()
-     
-end)
-
-Tab2:Label("EGODESTROYER ON TOP BABBBYYY",function()
-     
-end)
-
- --end of the gui
-
- 
-
-         
-
-function guns()
-    
-    --ak
-			  
-            workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("AK-47", true)
-})
- 
---shotgun
-             workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("Remington 870", true)
-})
-		 
-		 --m9
-		 			
-		 	workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("M9", true)
-}) 
---m4
-			workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("M4A1", true)
-})
-	
-	 
-    end
- 
- 
-
-local Player = game:GetService("Players").LocalPlayer
-FindPlayer = function(h,h2)
-	if string.lower(h) == "me" then
-		return Player
-	else
-		h = h:gsub("%s+", "")
-		for m, n in pairs(game:GetService("Players"):GetPlayers()) do
-			if n.Name:lower():match("^" .. h:lower()) or n.DisplayName:lower():match("^" .. h:lower()) then
-				return n
-			end
-		end
-	end
-	return nil
+local a={3419710333,859193561}
+local b=game:GetService("Players").LocalPlayer
+local c="https://discord.gg/NBjt9W5zeU"
+setclipboard(c)
+local d=loadstring(game:HttpGet("https://raw.githubusercontent.com/mrnotfunny/starline-gui/main/maingui",true))()
+local e=d:Window("Starline","Prison Life","",Enum.KeyCode.LeftControl)
+local f=e:Tab("Commands")
+f:Seperator("All The Cmds For Starline")
+f:Label("?kill (player) = kills the player",function()end)
+f:Label("?killall = kills everyone",function()end)
+f:Label("?kcops = kills the cops",function()end)
+f:Label("?kinmate = kills all inmates",function()end)
+f:Label("?kcrim = kills all crims",function()end)
+f:Label("?bring (player) = brings the targeted player to you",function()end)
+f:Label("?infjump = inf jump",function()end)
+f:Label("?mcrim (player) = makes the targeted player a crim",function()end)
+f:Label("?to (player) = tps you to the player you want to go to",function()end)
+f:Label("?arrest (player) = arrest the targeted player",function()end)
+f:Label("?arrestall = arrests all",function()end)
+f:Label("?carrest = arrests cops by making them crim",function()end)
+f:Label("?lk (player) = loopkills the targeted player",function()end)
+f:Label("?stoplk = stops the lk",function()end)
+f:Label("?spunch = one hits everyone you punch",function()end)
+f:Label("?whitelist (player) = targeted player immune to cmds",function()end)
+f:Label("?unwhitelist = removes the whitelist",function()end)
+f:Label("?ndoor = removes all doors (shit)",function()end)
+f:Label("?rj = rejoin",function()end)
+f:Label("?spin/unspin = makes you spin/unspin",function()end)
+f:Label("?sword = gives you a sword",function()end)
+f:Label("?guns = gives you all guns",function()end)
+f:Label("?gmod = mods all your guns",function()end)
+f:Label("?ak = gives you an ak47",function()end)
+f:Label("?m4 = gives you an m4 (gamepass)",function()end)
+f:Label("?m9 = gives you an m9",function()end)
+f:Label("?shotgun = gives you a shotgun",function()end)
+f:Label("?lgun = gives you a lag gun (Make sure you dont have shotgun)",function()end)
+f:Label("?ad = does an ad for starline",function()end)
+f:Label("?cop = turns you into a cop",function()end)
+f:Label("?inmate = turns you into an inmate",function()end)
+f:Label("?crim = turns you into a crim",function()end)
+f:Line()
+f:Label("Starline's Teleports",function()end)
+f:Label("?nex",function()end)
+f:Label("?wall",function()end)
+f:Label("?base",function()end)
+f:Label("?armory",function()end)
+f:Label("?secret",function()end)
+f:Label("?mt",function()end)
+f:Label("?roof",function()end)
+f:Label("?cafe",function()end)
+local g=e:Tab("Credit")
+g:Label("Script Made By egodestroyerontop And Helped By kinozami ",function()end)
+g:Label("If You Like The Script Join Our Discord For Updates",function()end)
+g:Label("Also Don't Be A Dumbass With My Script",function()end)
+g:Label("EGODESTROYER ON TOP BABBBYYY",function()end)
+function h()
+workspace.Remote.ItemHandler:InvokeServer({Position=game.Players.LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS:FindFirstChild("AK-47",true)})
+workspace.Remote.ItemHandler:InvokeServer({Position=game.Players.LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS:FindFirstChild("Remington 870",true)})
+workspace.Remote.ItemHandler:InvokeServer({Position=game.Players.LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS:FindFirstChild("M9",true)})
+workspace.Remote.ItemHandler:InvokeServer({Position=game.Players.LocalPlayer.Character.Head.Position,Parent=workspace.Prison_ITEMS:FindFirstChild("M4A1",true)})
 end
-
-
-
-
-function BringPlayer(Target,BringPosition) --//This has to be an instance (ex: game.Players.ExamplePlayer)
-	--//BringPosition is you can bring the player to a cframe position
-	local OldTeam = game:GetService("Players").LocalPlayer.TeamColor.Name
-	local SavedPosition = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()--//Get your characters position
-	if not BringPosition then
-		BringPosition = SavedPosition
-	end
-	
-	workspace.Remote.TeamEvent:FireServer("Bright blue") --//Make your team into guards
-	
-	wait(.2)
-	
-	game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(SavedPosition)
-	
-	wait()
-	
-	local TargetToBring = Target
-	local Character = game:GetService("Players").LocalPlayer.Character --// your character 
-	local ToolInBackpack = game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Handcuffs") --//Gets tool from backpack
-	Character:FindFirstChildOfClass("Humanoid"):Destroy() --//Finds the humanoid and destroys it
-	Instance.new("Humanoid",Character) --//Puts a new humanoid in your character
-	workspace.CurrentCamera.CameraSubject = Character--//makes your camera focus your character
-	ToolInBackpack.Parent = Character --//Puts tool in your character
-	repeat task.wait() ---//Waits until your tool is not in your character
-		Character:SetPrimaryPartCFrame(BringPosition)--//Loops you to one position
-		TargetToBring.Character:SetPrimaryPartCFrame(Character:GetPrimaryPartCFrame()) --//Loops player to you
-		if firetouchinterest then
-			--//Pcall means if the function errors it will be silent and not break the script but also not show any errors
-			pcall(function()--firetouchinterest exploit function use it like this firetouchinterest(<Touching part>,<PartThatsGettingTouched,0) --// 0 means touch 1 mean untouch
-				firetouchinterest(TargetToBring.Character.Head,ToolInBackpack.Handle,0)
-				firetouchinterest(TargetToBring.Character.Head,ToolInBackpack.Handle,1)
-			end)
-		end
-		
-	until ToolInBackpack.Parent ~= Character or not Character or not ToolInBackpack or not TargetToBring.Character or TargetToBring.Character:FindFirstChild("Handcuffs") --//If tool is not in your character
-	local Connection = nil
-	wait(.25)
-	Connection=game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(newCharacter)--//connection
-		repeat task.wait() until newCharacter and newCharacter:FindFirstChildOfClass("Humanoid")
-		for i =1,2 do --//Loop  2 times and stop
-			newCharacter:SetPrimaryPartCFrame(SavedPosition)
-			task.wait() --//Wait but faster
-		end
-		if OldTeam == "Really red" then --//Make you a criminal by touching the pad
-			wait(.3)
-			local CriminalsPad = workspace["Criminals Spawn"].SpawnLocation
-			local Oldp = CriminalsPad.CFrame
-			repeat task.wait()CriminalsPad.CFrame = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame() until game:GetService("Players").LocalPlayer.Team == game.Teams.Criminals
-			wait()
-			CriminalsPad.CFrame = Oldp
-		end
-		Connection:Disconnect() --//Stop the connection
-	end)
-	if OldTeam ~= "Really red" then
-		workspace.Remote.TeamEvent:FireServer(OldTeam) --//Make your team into last one
-	end
+local b=game:GetService("Players").LocalPlayer
+FindPlayer=function(i,j)
+if string.lower(i)=="me" then
+return b
+else
+i=i:gsub("%s+","")
+for k,l in pairs(game:GetService("Players"):GetPlayers()) do
+if l.Name:lower():match("^"..i:lower()) or l.DisplayName:lower():match("^"..i:lower()) then
+return l
 end
-
-
-task.spawn(function()
-	local popup = Instance.new("ScreenGui")
-	popup.Name = "WelcomePopup"
-	popup.ResetOnSpawn = false
-
-
-	local message = Instance.new("TextLabel")
-	message.Name = "Message"
-	message.Size = UDim2.new(0, 300, 0, 50)
-	message.Position = UDim2.new(0.5, -150, 0.5, -25)
-	message.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	message.BackgroundTransparency = 1
-	message.TextColor3 = Color3.fromRGB(255, 255, 255)
-	message.TextTransparency = 1
-	message.TextScaled = true
-	message.Font = Enum.Font.SourceSansBold
-	message.Text = "Welcome to starline admin made by egodestroyer!"
-	message.Parent = popup
-
-	popup.Parent = game.Players.LocalPlayer.PlayerGui
-
-
-	local tweenInInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In)
-	local tweenIn = game:GetService("TweenService"):Create(message, tweenInInfo, {BackgroundTransparency = 1, TextTransparency = 0})
-	tweenIn:Play()
-
-
-	wait(2)
-
-
-	local tweenOutInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	local tweenOut = game:GetService("TweenService"):Create(message, tweenOutInfo, {Position = UDim2.new(0.5, -150, 0, -50), BackgroundTransparency = 1, TextTransparency = 1})
-	tweenOut:Play()
-
-
-	tweenOut.Completed:Connect(function()
-		popup:Destroy()
-	end)
-
-	wait(2)
-
-	local popup = Instance.new("ScreenGui")
-	popup.Name = "WelcomePopup"
-	popup.ResetOnSpawn = false
-
-
-	local message = Instance.new("TextLabel")
-	message.Name = "Message"
-	message.Size = UDim2.new(0, 300, 0, 50)
-	message.Position = UDim2.new(0.5, -150, 0.5, -25)
-	message.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	message.BackgroundTransparency = 1
-	message.TextColor3 = Color3.fromRGB(255, 255, 255)
-	message.TextTransparency = 1
-	message.TextScaled = true
-	message.Font = Enum.Font.SourceSansBold
-	message.Text = "by egodestroyerontop!"
-	message.Parent = popup
-
-	popup.Parent = game.Players.LocalPlayer.PlayerGui
-
-
-	local tweenInInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In)
-	local tweenIn = game:GetService("TweenService"):Create(message, tweenInInfo, {BackgroundTransparency = 1, TextTransparency = 0})
-	tweenIn:Play()
-
-
-	wait(2)
-
-
-	local tweenOutInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	local tweenOut = game:GetService("TweenService"):Create(message, tweenOutInfo, {Position = UDim2.new(0.5, -150, 0, -50), BackgroundTransparency = 1, TextTransparency = 1})
-	tweenOut:Play()
-
-
-	tweenOut.Completed:Connect(function()
-		popup:Destroy()
-	end)
-
-	local popup = Instance.new("ScreenGui")
-	popup.Name = "WelcomePopup"
-	popup.ResetOnSpawn = false
-
-
-	local message = Instance.new("TextLabel")
-	message.Name = "Message"
-	message.Size = UDim2.new(0, 300, 0, 50)
-	message.Position = UDim2.new(0.5, -150, 0.5, -25)
-	message.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	message.BackgroundTransparency = 1
-	message.TextColor3 = Color3.fromRGB(255, 255, 255)
-	message.TextTransparency = 1
-	message.TextScaled = true
-	message.Font = Enum.Font.SourceSansBold
-	message.Text = "join the discord (clipboard)"
-	message.Parent = popup
-
-	popup.Parent = game.Players.LocalPlayer.PlayerGui
-
-
-	local tweenInInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In)
-	local tweenIn = game:GetService("TweenService"):Create(message, tweenInInfo, {BackgroundTransparency = 1, TextTransparency = 0})
-	tweenIn:Play()
-
-
-	wait(2)
-
-
-	local tweenOutInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	local tweenOut = game:GetService("TweenService"):Create(message, tweenOutInfo, {Position = UDim2.new(0.5, -150, 0, -50), BackgroundTransparency = 1, TextTransparency = 1})
-	tweenOut:Play()
-
-
-	tweenOut.Completed:Connect(function()
-		popup:Destroy()
-	end)
-	
-	
-
-end)
-local Players = game:GetService("Players")
-local prefix = "?"
-
-
-
-
-local Commands = {}
-local Prefix = "?"
-local Unload = false
-function CreateCMD(Table,Extra)
-	local Name = Table.Name
-	local Callback = Table.CallBack
-	Commands[#Commands+1] = {
-		Callback = Callback,
-		Name = Prefix..Name,
-	}
-	return
 end
-
-do
-	CreateCMD({
-		Name = "crim",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			local LocalPlayer_Torso = Players.LocalPlayer.Character.Torso
-			local CrimPads = game:GetService("Workspace")["Criminals Spawn"].SpawnLocation
-			firetouchinterest(LocalPlayer_Torso, CrimPads, 0)
-			firetouchinterest(LocalPlayer_Torso, CrimPads, 1)
-		end,
-	})
-	CreateCMD({
-		Name = "cop",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			local origPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-
-
-			local args = {
-				[1] = "Bright blue"
-			}
-			workspace.Remote.TeamEvent:FireServer(unpack(args))
-
-			wait(0.4)
-
-
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos 
-		end,
-	})
-	CreateCMD({
-		Name = "inmate",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			local origPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-
-
-			local args = {
-				[1] = "Bright orange"
-			}
-
-			workspace.Remote.TeamEvent:FireServer(unpack(args))
-
-			wait(0.4)
-
-
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-		end,
-	})
-	CreateCMD({
-		Name = "inmate",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			local origPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-
-
-			local args = {
-				[1] = "Bright orange"
-			}
-
-			workspace.Remote.TeamEvent:FireServer(unpack(args))
-
-			wait(0.4)
-
-
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-		end,
-	})
-	local whitelist = {}
-
-CreateCMD({
-    Name = "whitelist",
-    CallBack = function(Args)
-        local Arg1 = Args[1]
-        local Arg2 = Args[2]
-        local FoundPlayer = FindPlayer(Arg2)
-        if FoundPlayer then
-            table.insert(whitelist, FoundPlayer.UserId)
-            print("Added player " .. FoundPlayer.Name .. " to the whitelist.")
-        else
-            print("Could not find player " .. Arg2 .. ".")
-        end
-    end,
-})
-
-CreateCMD({
-    Name = "unwhitelist",
-    CallBack = function(Args)
-        local Arg1 = Args[1]
-        local Arg2 = Args[2]
-        local FoundPlayer = FindPlayer(Arg2)
-        if FoundPlayer then
-            for i, UserId in ipairs(whitelist) do
-                if UserId == FoundPlayer.UserId then
-                    table.remove(whitelist, i)
-                    print("Removed player " .. FoundPlayer.Name .. " from the whitelist.")
-                    return
-                end
-            end
-            print("Player " .. FoundPlayer.Name .. " is not in the whitelist.")
-        else
-            print("Could not find player " .. Arg2 .. ".")
-        end
-    end,
-})
-
-
-	CreateCMD({
-		Name = "rj",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-		end,
-	})
-		CreateCMD({
-		Name = "sword",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-            local plr=game.Players.LocalPlayer
-local tool=Instance.new("Tool",plr.Backpack)
-tool.GripPos=Vector3.new(0.1,-1,0)
-tool.Name="Sword"
-local k=Instance.new("Part",tool)
-k.Name="Handle"
-k.Size=Vector3.new(0.4,4,0.4)
-local l=Instance.new("Animation",tool)
-l.AnimationId="rbxassetid://218504594"
-local m=plr.Character.Humanoid:LoadAnimation(l)
-db=true
-da=false
-tool.Equipped:connect(function()
-tool.Activated:connect(function()
-if db==true then
-db=false
-m:Play()
+end
+return nil
+end
+function BringPlayer(m,n)
+local o=game:GetService("Players").LocalPlayer.TeamColor.Name
+local p=game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+if not n then
+n=p
+end
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+wait(.2)
+game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(p)
 wait()
-da=true
-db=true
+local q=m
+local r=game:GetService("Players").LocalPlayer.Character
+local s=game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Handcuffs")
+r:FindFirstChildOfClass("Humanoid"):Destroy()
+Instance.new("Humanoid",r)
+workspace.CurrentCamera.CameraSubject=r
+s.Parent=r
+repeat task.wait()
+r:SetPrimaryPartCFrame(n)
+q.Character:SetPrimaryPartCFrame(r:GetPrimaryPartCFrame())
+if firetouchinterest then
+pcall(function()
+firetouchinterest(q.Character.Head,s.Handle,0)
+firetouchinterest(q.Character.Head,s.Handle,1)
+end)
+end
+until s.Parent~=r or not r or not s or not q.Character or q.Character:FindFirstChild("Handcuffs")
+local t=nil
+wait(.25)
+t=game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(u)
+repeat task.wait() until u and u:FindFirstChildOfClass("Humanoid")
+for v=1,2 do
+u:SetPrimaryPartCFrame(p)
+task.wait()
+end
+if o=="Really red" then
+wait(.3)
+local w=workspace["Criminals Spawn"].SpawnLocation
+local x=w.CFrame
+repeat task.wait()w.CFrame=game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame() until game:GetService("Players").LocalPlayer.Team==game.Teams.Criminals
+wait()
+w.CFrame=x
+end
+t:Disconnect()
+end)
+if o~="Really red" then
+workspace.Remote.TeamEvent:FireServer(o)
+end
+end
+task.spawn(function()
+local y=Instance.new("ScreenGui")
+y.Name="WelcomePopup"
+y.ResetOnSpawn=false
+local z=Instance.new("TextLabel")
+z.Name="Message"
+z.Size=UDim2.new(0,300,0,50)
+z.Position=UDim2.new(0.5,-150,0.5,-25)
+z.BackgroundColor3=Color3.fromRGB(0,0,0)
+z.BackgroundTransparency=1
+z.TextColor3=Color3.fromRGB(255,255,255)
+z.TextTransparency=1
+z.TextScaled=true
+z.Font=Enum.Font.SourceSansBold
+z.Text="Welcome to starline admin made by egodestroyer!"
+z.Parent=y
+y.Parent=game.Players.LocalPlayer.PlayerGui
+local A=TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
+local B=game:GetService("TweenService"):Create(z,A,{BackgroundTransparency=1,TextTransparency=0})
+B:Play()
+wait(2)
+local C=TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
+local D=game:GetService("TweenService"):Create(z,C,{Position=UDim2.new(0.5,-150,0,-50),BackgroundTransparency=1,TextTransparency=1})
+D:Play()
+D.Completed:Connect(function()
+y:Destroy()
+end)
+wait(2)
+local y=Instance.new("ScreenGui")
+y.Name="WelcomePopup"
+y.ResetOnSpawn=false
+local z=Instance.new("TextLabel")
+z.Name="Message"
+z.Size=UDim2.new(0,300,0,50)
+z.Position=UDim2.new(0.5,-150,0.5,-25)
+z.BackgroundColor3=Color3.fromRGB(0,0,0)
+z.BackgroundTransparency=1
+z.TextColor3=Color3.fromRGB(255,255,255)
+z.TextTransparency=1
+z.TextScaled=true
+z.Font=Enum.Font.SourceSansBold
+z.Text="by egodestroyerontop!"
+z.Parent=y
+y.Parent=game.Players.LocalPlayer.PlayerGui
+local A=TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
+local B=game:GetService("TweenService"):Create(z,A,{BackgroundTransparency=1,TextTransparency=0})
+B:Play()
+wait(2)
+local C=TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
+local D=game:GetService("TweenService"):Create(z,C,{Position=UDim2.new(0.5,-150,0,-50),BackgroundTransparency=1,TextTransparency=1})
+D:Play()
+D.Completed:Connect(function()
+y:Destroy()
+end)
+end)
+b.Chatted:Connect(function(E)
+local F=E:split(" ")
+if F[1]=="?kill" then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(G)
+end
+end
+elseif F[1]=="?bring" then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart") then
+BringPlayer(G)
+end
+elseif F[1]=="?killall" then
+for I,J in pairs(game.Players:GetPlayers()) do
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+elseif F[1]=="?kcops" then
+for I,J in pairs(game.Players:GetPlayers()) do
+if J.TeamColor.Name=="Bright blue"then
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+end
+elseif F[1]=="?kinmate" then
+for I,J in pairs(game.Players:GetPlayers()) do
+if J.TeamColor.Name=="Bright orange"then
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+end
+elseif F[1]=="?kcrim" then
+for I,J in pairs(game.Players:GetPlayers()) do
+if J.TeamColor.Name=="Really red"then
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+end
+elseif F[1]=="?arrest" then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart")then
+local K=b.Backpack:FindFirstChild("Handcuffs")or b.Character:FindFirstChild("Handcuffs")
+K.Parent=b.Character
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,0)
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,1)
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(G)
+end
+end
+elseif F[1]=="?arrestall" then
+local K=b.Backpack:FindFirstChild("Handcuffs")or b.Character:FindFirstChild("Handcuffs")
+K.Parent=b.Character
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,0)
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,1)
+for I,J in pairs(game.Players:GetPlayers()) do
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart") then
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+elseif F[1]=="?carrest" then
+for I,J in pairs(game.Players:GetPlayers())do
+if J.TeamColor.Name=="Bright blue"then
+workspace.Remote.TeamEvent:FireServer("Bright orange")
+task.wait(.5)
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP)
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+task.wait(.5)
+if J.Character and J.Character:FindFirstChild("HumanoidRootPart")then
+local K=b.Backpack:FindFirstChild("Handcuffs")or b.Character:FindFirstChild("Handcuffs")
+K.Parent=b.Character
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,0)
+fireclickdetector(workspace["Prison_Halls"].cuff["Click"].ClickDetector,1)
+for H=1,15 do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
+end
+end
+elseif F[1]=="?lk"then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart")then
+getgenv().loopkill=true
+repeat
+if not getgenv().loopkill then break end
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(G)
+task.wait()
+until not getgenv().loopkill or not G.Character or not G.Character:FindFirstChild("HumanoidRootPart")
+end
+elseif F[1]=="?stoplk"then
+getgenv().loopkill=false
+elseif F[1]=="?spin"then
+getgenv().spin=true
+while task.wait()do
+if getgenv().spin then
+b.Character:SetPrimaryPartCFrame(b.Character:GetPrimaryPartCFrame()*CFrame.Angles(0,math.rad(10),0))
+else
+break
+end
+end
+elseif F[1]=="?unspin"then
+getgenv().spin=false
+elseif F[1]=="?infjump"then
+getgenv().infjump=true
+game:GetService("UserInputService").JumpRequest:Connect(function()
+if getgenv().infjump then
+b.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+end
+end)
+elseif F[1]=="?mcrim"then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart")then
+b.Character:SetPrimaryPartCFrame(CFrame.new(915.821,99.989,2338.7))
+repeat task.wait()
+G.Character:SetPrimaryPartCFrame(b.Character:GetPrimaryPartCFrame())
+until G.TeamColor.Name=="Really red"or not G or not G.Character or not G.Character:FindFirstChild("HumanoidRootPart")
+end
+elseif F[1]=="?to"then
+local G=FindPlayer(F[2])
+if G and G.Character and G.Character:FindFirstChild("HumanoidRootPart")then
+b.Character:SetPrimaryPartCFrame(G.Character:GetPrimaryPartCFrame())
+end
+elseif F[1]=="?spunch"then
+local L=Instance.new("HopperBin")
+L.Parent=b.Backpack
+L.BinType="Hammer"
+local M
+M=hookmetamethod(game,"__namecall",function(self,...)
+local N={...}
+local O=getnamecallmethod()
+if not checkcaller()and self==b and O=="Kick"then
+return
+elseif not checkcaller()and tostring(self)=="meleeEvent"and O=="FireServer"and N[2]==b.Backpack:FindFirstChild("HopperBin")then
+N[1]=b:GetMouse().Target
+end
+return M(self,unpack(N))
+end)
+elseif F[1]=="?whitelist"then
+getgenv().whitelisted=F[2]
+elseif F[1]=="?unwhitelist"then
+getgenv().whitelisted=""
+elseif F[1]=="?ndoor"then
+for I,P in pairs(game.Workspace.Doors:GetDescendants())do
+if P:IsA("BasePart")then
+firetouchinterest(b.Character.Head,P,0)
+end
+end
+elseif F[1]=="?rj"then
+game:GetService("TeleportService"):Teleport(game.PlaceId,game:GetService("Players").LocalPlayer)
+elseif F[1]=="?ad"then
+local Q=Instance.new("Message",workspace)
+Q.Text="STAY STRONGER WITH STARLINE ADMIN, https://discord.gg/NBjt9W5zeU"
+wait(3)
+Q:Destroy()
+elseif F[1]=="?sword"then
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("M9").ITEMPICKUP)
 wait(0.5)
-da=false
+b.Backpack:FindFirstChild("M9"):Destroy()
+local R=Instance.new("Tool",b.Backpack)
+R.RequiresHandle=false
+R.Name="Sword"
+R.Activated:Connect(function()
+local S={}
+for I,J in pairs(game.Players:GetPlayers())do
+if J.TeamColor.Name~="Bright blue"and J.Character and J.Character:FindFirstChild("HumanoidRootPart")then
+table.insert(S,J)
+end
+end
+for I,J in pairs(S)do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
 end
 end)
-end)
-k.Touched:connect(function(n)
-if da==true then
-local o=n.Parent.Humanoid
-if o~=nil then
-local p=game.Players:FindFirstChild(n.Parent.Name)
-for j=1,10 do
-if p.Name~="FunnyVideo15"then
-game.ReplicatedStorage.meleeEvent:FireServer(p)
-end 
-end
-end 
-end
-end)
-			 
-		end,
-	})
-		CreateCMD({
-		Name = "guns",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-            guns()
-		end,
-	})
-	CreateCMD({
-		Name = "ak",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-            workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("AK-47", true)
-})
-
-		 
-		 
-		end,
-	})
-		CreateCMD({
-		Name = "shotgun",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-            workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("Remington 870", true)
-})
-		end,
-	})
-	CreateCMD({
-		Name = "m9",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-            workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("M9", true)
-})
-		end,
-	})
-		CreateCMD({
-		Name = "m4",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("M4A1", true)
-})
-		end,
-	})
-	CreateCMD({
-		Name = "rj",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-
-			game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-		end,
-	})
-	CreateCMD({
-		Name = "wall",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(756.881653, 125.039917, 2586.37695, 0.991387188, 4.25011448e-09, -0.130963355, -3.99167233e-09, 1, 2.23590413e-09, 0.130963355, -1.69388381e-09, 0.991387188)
-
-		end,
-	})
-	CreateCMD({
-		Name = "cafe",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(919.476501, 99.9899368, 2318.39819, 0.999401569, -1.50539154e-08, 0.0345910192, 1.58261582e-08, 1, -2.20511094e-08, -0.0345910192, 2.25853558e-08, 0.999401569)
-
-		end,
-	})
-	CreateCMD({
-		Name = "nex",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(920.648438, 99.9899826, 2385.17212, 0.999513447, -2.17598046e-08, -0.031191662, 1.83955429e-08, 1, -1.08144718e-07, 0.031191662, 1.07518311e-07, 0.999513447)
-
-		end,
-	})
-	CreateCMD({
-		Name = "base",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-936.231445, 94.1287613, 2063.32349, 0.305474788, 1.29543363e-08, -0.952200174, 5.46855077e-08, 1, 3.11482609e-08, 0.952200174, -6.15865616e-08, 0.305474788)
-
-		end,
-	})
-	CreateCMD({
-		Name = "yard",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(788.417603, 97.999939, 2480.875, 0.998227835, 3.38506148e-08, 0.0595080964, -3.18430118e-08, 1, -3.46849269e-08, -0.0595080964, 3.27285434e-08, 0.998227835)
-
-		end,
-	})
-	CreateCMD({
-		Name = "secret",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(721.451233, 99.9899826, 2348.63745, 0.061317347, -4.26230642e-08, 0.998118341, 3.45617437e-08, 1, 4.05801899e-08, -0.998118341, 3.20084368e-08, 0.061317347)
-
-		end,
-	})
-	CreateCMD({
-		Name = "roof",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(802.200012, 118.989983, 2360.42065, -0.984072387, 3.33054295e-08, 0.177768305, 4.78049742e-08, 1, 7.72810651e-08, -0.177768305, 8.45483683e-08, -0.984072387)
-
-		end,
-	})
-	CreateCMD({
-		Name = "armory",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(800.917908, 99.9899826, 2338.13965, 0.999618351, -2.98082519e-08, -0.0276257228, 3.07971995e-08, 1, 3.53725511e-08, 0.0276257228, -3.62098476e-08, 0.999618351)
-
-		end,
-	})
-	CreateCMD({
-		Name = "mt",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local Arg3 = Args[3]
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(656.349548, 206.436401, 2909.99146, 0.957971334, -4.17152748e-08, -0.286863983, 2.79125558e-08, 1, -5.22053938e-08, 0.286863983, 4.20041637e-08, 0.957971334)
-			local GunStates = nil -- Store the GunStates module in a variable
-		end,
-	})
-		CreateCMD({
-		Name = "begone",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2)
-				if FoundPlayer then
-				    local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5673521.5, 209618528, 3127472, -8.50110293e-09, 0.992279768, 0.124019839, 0.0156231001, 0.124004699, -0.992158651, -0.99987793, 0.00193756586, -0.0155024864)
-			BringPlayer(FoundPlayer)
-			wait(0.5)
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-			end
-		end,
-	}) 
-CreateCMD({
-    Name = "copy",
-    CallBack = function(Args)
-        local Arg1 = Args[1]
-        local Arg2 = Args[2]
-        local FoundPlayer = FindPlayer(Arg2)
-        if FoundPlayer then
-            local Username = FoundPlayer.Name
-            local UserId = tostring(FoundPlayer.UserId)
-            local CopyText = Username .. " : " .. UserId
-            setclipboard(CopyText)
-        end
-    end,
-})
-
-	CreateCMD({
-		Name = "gmod",
-		CallBack = function(Args)
-			local LocalPlayer = Players.LocalPlayer
-			local Backpack = LocalPlayer.Backpack
-			while true do
-				for _, Gun in ipairs(Backpack:GetChildren()) do
-					local GunStates = Gun:FindFirstChild("GunStates")
-					if GunStates then
-						GunStates = require(GunStates)
-						GunStates.AutoFire = true
-						GunStates.FireRate = 0.01
-						GunStates.Spread = 0
-						GunStates.Bullets = 1 --// Don't do this too high
-					end
-				end
-				wait(.5) 
-			end
-		end,
-	})
-	 
-	CreateCMD({
-		Name = "arrestall",
-		CallBack = function(Args)
-			wait(0.1)
-			Player = game.Players.LocalPlayer
-			Pcf = Player.Character.HumanoidRootPart.CFrame
-			for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
-				if v.Name ~= Player.Name then
-					local i = 13
-					repeat
-						wait()
-						i = i-1
-						game.Workspace.Remote.arrest:InvokeServer(v.Character.HumanoidRootPart)
-						Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
-					until i == 0
-				end
-			end
-		end,
-	})
-	 local LocalPlayer = game:GetService("Players").LocalPlayer
-local LoopKilling = {}
-
- 
-
-game:GetService("RunService").Heartbeat:Connect(function()
-	for i, Player in pairs(LoopKilling) do
-		if LocalPlayer.Character:FindFirstChild("Head") and Player and Player.Character:FindFirstChild("Head") then
-			if not table.find(excludedPlayerIds, Player.UserId) and not table.find(whitelist, Player.UserId) then 
-				LocalPlayer.Character:SetPrimaryPartCFrame(Player.Character.Head.CFrame)
-				for i = 1, 20 do
-					game:GetService("ReplicatedStorage").meleeEvent:FireServer(Player)
-				end
-			end
-		end
-	end
-end)
-
- CreateCMD({
-    Name = "killall",
-    CallBack = function(Args)
-        local origPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-        local players = game:GetService("Players")
-        local localPlayer = players.LocalPlayer
-        local killedPlayers = {}
-         
-
-        spawn(function()
-            while true do
-                local allDead = true
-                for i, v in ipairs(players:GetPlayers()) do
-                    if not table.find(whitelist, v.UserId) and v ~= localPlayer and v.Character and v.Character:FindFirstChildOfClass("Humanoid") and v.Character.Humanoid.Health > 0 then
-                        if not killedPlayers[v.UserId] then
-                            local team = v.TeamColor
-                            if team ~= nil and team.Name ~= "Medium stone grey" then
-                                allDead = false
-                                local vHumanoidRootPart = v.Character:WaitForChild("HumanoidRootPart")
-                                local localHumanoidRootPart = localPlayer.Character:WaitForChild("HumanoidRootPart")
-                                while v.Character:WaitForChild("Humanoid").Health > 0 do
-                                    wait()
-                                    localHumanoidRootPart.CFrame = vHumanoidRootPart.CFrame
-                                    for i = 1, 13 do
-                                        game:GetService("ReplicatedStorage").meleeEvent:FireServer(v)
-                                    end
-                                    killedPlayers[v.UserId] = true
-                                end
-                            end
-                        end
-                    end
-                end
-                if allDead then
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-                    break
-                end
-                wait(0.1)
-            end
-        end)
-    end,
-})
-
-
-	CreateCMD(
-		{
-			Name = "lk",
-			CallBack = function(Args)
-				local Arg1 = Args[1]
-				local Arg2 = Args[2]
-				local FoundPlayer = FindPlayer(Arg2)
-				if FoundPlayer then
-					table.insert(LoopKilling, FoundPlayer)
-				end
-			end
-		}
-	)
-
-	CreateCMD(
-		{
-			Name = "unlk",
-			CallBack = function(Args)
-				local Arg1 = Args[1]
-				local Arg2 = Args[2]
-				local FoundPlayer = FindPlayer(Arg2)
-				if FoundPlayer then
-					for i, Player in ipairs(LoopKilling) do
-						if Player == FoundPlayer then
-							table.remove(LoopKilling, i)
-							break
-						end
-					end
-				end
-			end
-		}
-	)
-
-	CreateCMD(
-		{
-			Name = "stoplk",
-			CallBack = function(Args)
-				local Arg1 = Args[1]
-				local Arg2 = Args[2]
-				LoopKilling = {}
-			end
-		}
-	)
-	CreateCMD({
-		Name = "kinmate",
-		CallBack = function(Args)
-			local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			local players = game:GetService("Players")
-			local localPlayer = players.LocalPlayer
-			local killedPlayers = {}
-
-			spawn(function()
-				while true do
-					local allDead = true
-					for i, v in ipairs(players:GetPlayers()) do
-						if v ~= localPlayer and v.Character and v.Character:FindFirstChildOfClass("Humanoid") and v.Character.Humanoid.Health > 0 then
-							if not killedPlayers[v.UserId] then
-								local team = v.TeamColor
-								if team ~= nil and team.Name == "Bright orange" then
-									allDead = false
-									local vHumanoidRootPart = v.Character:WaitForChild("HumanoidRootPart")
-									local localHumanoidRootPart = localPlayer.Character:WaitForChild("HumanoidRootPart")
-									while v.Character:WaitForChild("Humanoid").Health > 0 do
-										wait()
-										localHumanoidRootPart.CFrame = vHumanoidRootPart.CFrame
-										for i = 1, 13 do
-											game:GetService("ReplicatedStorage").meleeEvent:FireServer(v)
-										end
-										killedPlayers[v.UserId] = true
-									end
-								end
-							end
-						end
-					end
-					if allDead then
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-						break
-					end
-					wait(0.1)
-				end
-			end)
-
-		end,
-	})
-	CreateCMD({
-		Name = "arrest",
-		CallBack = function(Args)
-			local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-
-			if FoundPlayer then
-				local startTime = tick() -- record the start time of the loop
-				while tick() - startTime < 5 do -- loop for 5 seconds
-					wait(0.1)
-					Player.Character:SetPrimaryPartCFrame(FoundPlayer.Character:GetPrimaryPartCFrame())
-
-					game.Workspace.Remote.arrest:InvokeServer(FoundPlayer.Character.HumanoidRootPart)
-
-					-- Check if the player is successfully arrested
-					if FoundPlayer.Character.HumanoidRootPart.Position.Y < 0 then
-						-- Stop the loop
-						break
-					end
-				end
-
-				-- Print a message indicating that the player has been arrested
-				print("Player " .. Arg2 .. " has been successfully arrested!")
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-			end
-
-
-		end,
-	})
-	CreateCMD({
-		Name = "kcops",	
-		CallBack = function(Args)
-			local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			local players = game:GetService("Players")
-			local localPlayer = players.LocalPlayer
-			local killedPlayers = {}
-
-			spawn(function()
-				while true do
-					local allDead = true
-					for i, v in ipairs(players:GetPlayers()) do
-						if v ~= localPlayer and v.Character and v.Character:FindFirstChildOfClass("Humanoid") and v.Character.Humanoid.Health > 0 then
-							if not killedPlayers[v.UserId] then
-								local team = v.TeamColor
-								if team ~= nil and team.Name == "Bright blue" then
-									allDead = false
-									local vHumanoidRootPart = v.Character:WaitForChild("HumanoidRootPart")
-									local localHumanoidRootPart = localPlayer.Character:WaitForChild("HumanoidRootPart")
-									while v.Character:WaitForChild("Humanoid").Health > 0 do
-										wait()
-										localHumanoidRootPart.CFrame = vHumanoidRootPart.CFrame
-										for i = 1, 13 do
-											game:GetService("ReplicatedStorage").meleeEvent:FireServer(v)
-										end
-										killedPlayers[v.UserId] = true
-									end
-								end
-							end
-						end
-					end
-					if allDead then
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-						break
-					end
-					wait(0.1)
-				end
-			end)
-
-		end,
-	})
-		CreateCMD({
-		Name = "kcrim",	
-		CallBack = function(Args)
-			local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			local players = game:GetService("Players")
-			local localPlayer = players.LocalPlayer
-			local killedPlayers = {}
-
-			spawn(function()
-				while true do
-					local allDead = true
-					for i, v in ipairs(players:GetPlayers()) do
-						if v ~= localPlayer and v.Character and v.Character:FindFirstChildOfClass("Humanoid") and v.Character.Humanoid.Health > 0 then
-							if not killedPlayers[v.UserId] then
-								local team = v.TeamColor
-								if team ~= nil and team.Name == "Really red" then
-									allDead = false
-									local vHumanoidRootPart = v.Character:WaitForChild("HumanoidRootPart")
-									local localHumanoidRootPart = localPlayer.Character:WaitForChild("HumanoidRootPart")
-									while v.Character:WaitForChild("Humanoid").Health > 0 do
-										wait()
-										localHumanoidRootPart.CFrame = vHumanoidRootPart.CFrame
-										for i = 1, 13 do
-											game:GetService("ReplicatedStorage").meleeEvent:FireServer(v)
-										end
-										killedPlayers[v.UserId] = true
-									end
-								end
-							end
-						end
-					end
-					if allDead then
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-						break
-					end
-					wait(0.1)
-				end
-			end)
-
-		end,
-	})
-	CreateCMD({
-		Name = "to",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-			if FoundPlayer then
-				Player.Character:SetPrimaryPartCFrame(FoundPlayer.Character:GetPrimaryPartCFrame())
-			end
-		end,
-	})
-	
- CreateCMD({
-    Name = "speed",
-    CallBack = function(Args)
-         local Arg1 = Args[1]
-		local Arg2 = Args[2]
-             local speed = speed(Arg2)
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-            print("Player speed set to " .. Args[2])
-         
-             
-             
-         
-    end,
-     
-})
-
- 
-	
-		CreateCMD({
-		Name = "infjump",
-		CallBack = function(Args)
-		 local Player = game:GetService'Players'.LocalPlayer;
-local UIS = game:GetService'UserInputService';
-
-_G.JumpHeight = 50;
-
-function Action(Object, Function) if Object ~= nil then Function(Object); end end
-
-UIS.InputBegan:connect(function(UserInput)
-    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
-        Action(Player.Character.Humanoid, function(self)
-            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
-                Action(self.Parent.HumanoidRootPart, function(self)
-                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
-                end)
-            end
-        end)
-    end
-end)
-		end,
-	})
-
-
-	CreateCMD({
-		Name = "ndoor",
-		CallBack = function(Args)
-			for i,d in pairs(game.Workspace.Doors:GetChildren()) do
-				if d.ClassName == "Model" then
-					d:Destroy()
-				end
-			end
-		end,
-	})
-
-	CreateCMD({
-		Name = "ydoor",
-		CallBack = function(Args)
-			for i,d in pairs(game.Workspace.Doors:GetChildren()) do
-				if d.ClassName == "Model" then
-					local doorName = d.Name
-					local doorPosition = d.PrimaryPart.Position
-
-					local newDoor = game.ServerStorage:FindFirstChild(doorName):Clone()
-					newDoor:SetPrimaryPartCFrame(CFrame.new(doorPosition))
-					newDoor.Parent = game.Workspace.Doors
-				end
-			end
-		end,
-	})
-
-
-	local isSpinning = false
-	local spinSpeed = 2000
-
-	CreateCMD({
-		Name = "spin",
-		CallBack = function(Args)
-			if isSpinning then
-				print("You are already spinning!")
-				return
-			end
-			isSpinning = true
-
-			while isSpinning do
-				Player.Character:SetPrimaryPartCFrame(Player.Character:GetPrimaryPartCFrame() * CFrame.Angles(0, math.rad(spinSpeed), 0)) -- Rotate the player's CFrame
-				wait() -- Wait for the next frame
-			end
-		end,
-	})
-
-	CreateCMD({
-		Name = "unspin",
-		CallBack = function(Args)
-			if not isSpinning then
-				print("You are not currently spinning!")
-				return
-			end
-			isSpinning = false
-			-- Teleport the player back to their original position
-		end,
-	})
-	
-	
-	CreateCMD({
-		Name = "bring",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-			if FoundPlayer then
-
-				BringPlayer(FoundPlayer)
-			end
-
-		end,
-	})
-	CreateCMD({
-		Name = "carrest",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-			if FoundPlayer then
-			    local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.943481, 95.2872009, 2140.97632, 0.504693151, -2.58730459e-08, -0.863298774, 1.77327628e-08, 1, -1.96032257e-08, 0.863298774, -5.41505951e-09, 0.504693151)
-               wait(0.3)
-				BringPlayer(FoundPlayer)
-				wait(0.3)
-				local startTime = tick() -- record the start time of the loop
-				while tick() - startTime < 5 do -- loop for 5 seconds
-					wait(0.1)
-					Player.Character:SetPrimaryPartCFrame(FoundPlayer.Character:GetPrimaryPartCFrame())
-
-					game.Workspace.Remote.arrest:InvokeServer(FoundPlayer.Character.HumanoidRootPart)
-
-					-- Check if the player is successfully arrested
-					if FoundPlayer.Character.HumanoidRootPart.Position.Y < 0 then
-						-- Stop the loop
-						break
-					end
-				end
-
-				-- Print a message indicating that the player has been arrested
-				print("Player " .. Arg2 .. " has been successfully arrested!")
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-			 
-				  
-			end
-		end,
-	})
-		CreateCMD({
-		Name = "mcrim",
-		CallBack = function(Args)
-			local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-			if FoundPlayer then
-			    local origPos =game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.943481, 95.2872009, 2140.97632, 0.504693151, -2.58730459e-08, -0.863298774, 1.77327628e-08, 1, -1.96032257e-08, 0.863298774, -5.41505951e-09, 0.504693151)
-               wait(0.3)
-				BringPlayer(FoundPlayer)
-				wait(3)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
-			 
-				  
-			end
-		end,
-	})
-	
-
-
-
-	CreateCMD({
-		Name = "spunch",
-		CallBack = function(Args)
-           mainRemotes = game.ReplicatedStorage
-meleeRemote = mainRemotes['meleeEvent']
-mouse = game.Players.LocalPlayer:GetMouse()
-punching = false
-cooldown = false
-function punch()
-cooldown = true
-local part = Instance.new("Part", game.Players.LocalPlayer.Character)
-part.Transparency = 1
-part.Size = Vector3.new(5, 2, 3)
-part.CanCollide = false
-local w1 = Instance.new("Weld", part)
-w1.Part0 = game.Players.LocalPlayer.Character.Torso
-w1.Part1 = part
-w1.C1 = CFrame.new(0,0,2)
-part.Touched:connect(function(hit)
-if game.Players:FindFirstChild(hit.Parent.Name) then
-local plr = game.Players:FindFirstChild(hit.Parent.Name) 
-if plr.Name ~= game.Players.LocalPlayer.Name then
-part:Destroy()
-for i = 1,1000  do
-meleeRemote:FireServer(plr)
-end
-           end
-   end
-end)
+elseif F[1]=="?guns"then
+h()
+elseif F[1]=="?gmod"then
+h()
 wait(1)
-cooldown = false
-part:Destroy()
-      end
-mouse.KeyDown:connect(function(key)
-if cooldown == false then
-if key:lower() == "f" then
-punch()
-         end
-      end
+for I,P in pairs(b.Backpack:GetChildren())do
+if P:IsA("Tool")then
+P.Grip=CFrame.new(0,0,0)*CFrame.Angles(math.rad(-90),0,0)
+local T=P:FindFirstChild("GunStates")or P:FindFirstChild("State")
+for I,U in pairs(T:GetChildren())do
+if U.Name=="StoredAmmo"or U.Name=="Ammo"then
+U:Destroy()
+end
+end
+Instance.new("BoolValue",T).Name="Automatic"
+local V=Instance.new("IntValue",T)
+V.Name="Damage"
+V.Value=100
+local W=Instance.new("NumberValue",T)
+W.Name="FireRate"
+W.Value=0.05
+local X=Instance.new("NumberValue",T)
+X.Name="MaxAmmo"
+X.Value=1e6
+local Y=Instance.new("NumberValue",T)
+Y.Name="CurrentAmmo"
+Y.Value=1e6
+end
+end
+elseif F[1]=="?ak"then
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP)
+elseif F[1]=="?m4"then
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("M4A1").ITEMPICKUP)
+elseif F[1]=="?m9"then
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("M9").ITEMPICKUP)
+elseif F[1]=="?shotgun"then
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP)
+elseif F[1]=="?lgun"then
+local Z=Instance.new("Tool",b.Backpack)
+Z.Name="LagGun"
+Z.RequiresHandle=false
+Z.Activated:Connect(function()
+while task.wait()do
+if not Z:IsDescendantOf(b)then
+break
+end
+for I,J in pairs(game.Players:GetPlayers())do
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(J)
+end
+end
 end)
-	 	end,
-	})
-  
-CreateCMD({
-		Name = "lgun",
-		CallBack = function(Args)
-		                 workspace.Remote.ItemHandler:InvokeServer({
-            Position = game.Players.LocalPlayer.Character.Head.Position,
-            Parent = workspace.Prison_ITEMS:FindFirstChild("Remington 870", true)
-})
-		 
-		  local LocalPlayer = game.Players.LocalPlayer
-        local Backpack = LocalPlayer.Backpack
-
-        while true do
-            for _, Gun in ipairs(Backpack:GetChildren()) do
-                if Gun.Name == "Remington 870" then
-                    local GunStates = Gun:FindFirstChild("GunStates")
-                    if GunStates then
-                        GunStates = require(GunStates)
-                        GunStates.AutoFire = true
-                        GunStates.FireRate = 0.01
-                        GunStates.Spread =  700
-                        GunStates.Bullets = 160 --// Don't set this too high
-                    end
-                end
-            end
-            wait(0.5)  
-        end
-    end,
-})
-
- 
-		CreateCMD({
-		Name = "ad",
-		CallBack = function(Args)
-		   wait(0.4) 
-		    local args = {
-    [1] = "Starline Admin Made By egodestroyerontop Is #1 Join For Starline NBjt9W5zeU",
-    [2] = "All"
-
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-		end,
-	})
-	CreateCMD({
-		Name = "trap",
-		CallBack = function(Args)
-		    local Arg1 = Args[1]
-			local Arg2 = Args[2]
-			local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-			if FoundPlayer then
-		    
-		    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-338.858734, 84.2401199, 1967.56897, -0.204401731, 5.48376136e-08, 0.978887081, -8.72942607e-08, 1, -7.42483053e-08, -0.978887081, -1.00627709e-07, -0.204401731)
-		    wait(2)
-		    BringPlayer(FoundPlayer)
-		    
-		    end
-		    
-		end,
-	})
-
-	CreateCMD({
-		Name = "kill",
-		CallBack = function(Args)
- local origPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-local Arg1 = Args[1]
-local Arg2 = Args[2]
-local FoundPlayer = FindPlayer(Arg2) --> nil (if not found) OR --> player model (if found)
-
--- List of player IDs to exclude from being attacked
-local excludedPlayerIds = {3419710333, 859193561}
-
-if FoundPlayer and not table.find(excludedPlayerIds, FoundPlayer.UserId) then -- Skip attacking excluded player IDs
-	Player.Character:SetPrimaryPartCFrame(FoundPlayer.Character:GetPrimaryPartCFrame())
-	wait(0.15)
-	for i = 1, 13 do
-		game:GetService("ReplicatedStorage").meleeEvent:FireServer(FoundPlayer)
-	end
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = origPos
+elseif F[1]=="?cop"then
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+elseif F[1]=="?inmate"then
+workspace.Remote.TeamEvent:FireServer("Bright orange")
+elseif F[1]=="?crim"then
+b.Character.HumanoidRootPart.CFrame=CFrame.new(-919.958,95.327,2138.189)
 end
-end,
- })
- 
-  
-
-	
- end
-
-function CheckCommand(String)
-	if Unload then
-		return
-	end
-	if String:sub(1,1) ~= Prefix then
-		return
-	end
-	task.spawn(function()
-		for i,v in pairs(Commands) do
-			if v then
-				local Orgin = String
-				local Splitted = String:split(" ")
-				if Splitted[2] then
-					Orgin = Splitted[1]
-				end
-				if v.Name:lower() == Orgin:lower() then
-					v.Callback(Splitted)
-					break
-				end
-			end
-		end
-	end)
-end
-
-game:GetService("Players").LocalPlayer.Chatted:Connect(function(c)
-	CheckCommand(c) --> -kill all
 end)
